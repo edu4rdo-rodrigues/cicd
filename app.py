@@ -1,10 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route("/")
-def hello_world():
-    return "<p>Hello, World</p>"
+@app.toute("/<name>")
+def hello_world(name=None):
+    return render_template("home.html", name=name)
 
 
 
