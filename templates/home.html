@@ -26,6 +26,14 @@
         <h1>Idade não obtida/h1>
         {% endif %}
 
+         <hr>
+
+         {% if name %}
+         <h1>Olá, {{ name }}, e tenho {{ idade }} anos</h1>
+         {% else %}
+         <h1>Olá, Mundo</h1>
+         {% endif %}
+
 
         <ul class="nav">
           <li class="nav-item">
